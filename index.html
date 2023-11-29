@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Economic Burden of SARS-CoV-2 Infection among Healthcare Workers in Four Countries: A Modelling Study</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wu Zeng, MD, PhD" />
+    <script src="libs/header-attrs-2.22/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/rladies.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/rladies-fonts.css" rel="stylesheet" />
+    <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset-0.2.6/panelset.js"></script>
+    <script src="libs/fabric-4.3.1/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view-0.2.6/tile-view.js"></script>
+    <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+    <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+    <link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+    <script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+    <link rel="stylesheet" href="libs/css/hygge-gu.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: title-slide, center, middle, inverse
+
+# Economic Burden of SARS-CoV-2 Infection among Healthcare Workers in Four Countries: A Modelling Study
+
+&lt;!--- ### &lt;br/&gt; A modelling study ---&gt;
+
+#### Wu Zeng, MD, PhD
+
+&lt;img src="libs/pic/GU.gif" width="10%" align="center" /&gt; 
+
+#### Georgetown University
+
+#### Presented at Georgetown Undergraduate Scientific Journal Club
+
+### Nov 29 2023
+
+---
+class: top
+
+# Introduction
+
+.pull-left[
+
+- Health care workers experienced .red[greater risk] of SARS-CoV-2 infection 
+
+- The risk of infected HCWs to .red[transmit] the disease to others 
+
+- The infection among HCWs affects the delivery of .red[essential health services]
+
+- Previous effort to quantify economic burden of COVID-19
+
+  - Some on disruption of essential services
+  
+  - Some on the productivity loss
+]
+
+.pull-right[
+
+&lt;img src="https://www.thelancet.com/cms/attachment/1795ef33-efd7-4378-b8ae-4141587eaaf1/fx1.jpg" &gt;
+
+]
+
+---
+
+# Objective
+
+&gt; .large[This study aims to quantify the economic costs of COVID-19 infections in HCWs during the .red[first year] of the pandemic from the societal perspective]
+
+
+---
+class: middle, center, inverse
+
+# Methods
+
+---
+# Analytical Framework 
+
+&lt;center&gt;
+
+&lt;img src="/libs/pic/Figure-1.jpg" width = 45%&gt;
+
+---
+# Economic burden estimation
+
+### Pathway 1 --- .red[Primary infection]
+
+.pull-left[
+
+- Infections 
+  
+  - Direct medical cost (Treatment cost)
+  
+  - Direct non-medical cost (Meals, accomodations, and travles)
+  
+  - loss of income
+  
+]
+
+.pull-right[
+- Deaths 
+
+  - .red[Productivity loss] due to premature death
+  
+  ]
+  
+  &gt; `$$\text{Ecomomic cost per death = GDP/capita} * (1- e^{-r*L}/r)$$`
+  where `r` is discount factor, *L* is life expectancy at the age of the death
+  
+  
+---
+# Economic burden estimation in each pathway (continue)
+
+### Pathway 2 --- .red[Secondary infection]
+
+.pull-left[
+
+Infections due to .red[transmission] by infected HCWs 
+  
+  - Among total infection in the general population, what percentage of them was due to the transmission by infected HCWs
+  
+  - population attributable risks .red[(PAR)]
+  
+  &gt; `\(PAR = \frac{E_i *(OR_i - 1)}{1+ E_i *(OR_i - 1)}\)`
+  ]
+
+.pull-right[
+
+&gt; `\(E_i = \frac{(\text{household size}_i - 1) * HCWs_i + \text{hospital admission}_i*0.2}{\text{Total population size}_i}\)`
+  
+&gt; `\(OR_i = 1 + 0.79 *\frac{ln (\frac{\text{Infection rate of HCW}_i}{\text{infection rate of general population}_i})}{ln (\frac{\text{Infection rate of HCW}_r}{\text{infection rate of general population}_r})}\)`
+
+&gt; where `i` refers to site `i`, and `r` refers to the reference country \- Scotland
+]
+
+---
+
+# Economic burden estimation in each pathway (continue)
+
+Pathway 3 --- .red[Disruption of essential services]
+
+.pull-left[
+
+- .red[Elasticity] of MMR and U5MR relative to HCWs density
+  
+&gt; `$$Elasticity_{MMR} = \frac{\text{% change in MMR}}{ \text{% change in HCW density}}$$`
+
+- Elasticity of MMR: .red[-0.474]
+
+- Elasticity of U5MR: .red[-0.231]
+]
+
+.pull-right[
+
+- HCWs .red[density] change
+
+  - HCWs died from COVID-19: .red[0.5 years] per deaths
+  
+  - HCWs infected but survived: .red[16.6 days] per infection
+  
+  - Other staff: .red[10% reduction] in productivity
+  
+- Generate overall reduction in density of HCWs
+  
+- Estimate the number of maternal deaths and Under 5 child death
+]
+
+---
+
+# A few other assumptions
+
+.pull-left[
+
+- Severity of COVID-19 cases 
+
+  - Mild-moderate: 81%
+  
+  - Severe: 14%
+  
+  - Critical: 5%
+
+- 3% is used as the .red[discount rate] for future productivity loss
+]
+
+.pull-right[
+
+&lt;center&gt;
+
+<svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:106.67pt;width:120pt;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkred;overflow:visible;fill-opacity:100%;position:relative;"><path d="M48 0C21.5 0 0 21.5 0 48V256H144c8.8 0 16 7.2 16 16s-7.2 16-16 16H0v64H144c8.8 0 16 7.2 16 16s-7.2 16-16 16H0v80c0 26.5 21.5 48 48 48H265.9c-6.3-10.2-9.9-22.2-9.9-35.1c0-46.9 25.8-87.8 64-109.2V271.8 48c0-26.5-21.5-48-48-48H48zM152 64h16c8.8 0 16 7.2 16 16v24h24c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H184v24c0 8.8-7.2 16-16 16H152c-8.8 0-16-7.2-16-16V152H112c-8.8 0-16-7.2-16-16V120c0-8.8 7.2-16 16-16h24V80c0-8.8 7.2-16 16-16zM512 272a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM288 477.1c0 19.3 15.6 34.9 34.9 34.9H541.1c19.3 0 34.9-15.6 34.9-34.9c0-51.4-41.7-93.1-93.1-93.1H381.1c-51.4 0-93.1 41.7-93.1 93.1z"/></svg>
+
+]
+---
+
+# Site selection 
+
+Primarily based on the .red[availability] of data and country's interest
+
+&lt;table class=" lightable-classic" style='font-family: "Arial Narrow", "Source Sans Pro", sans-serif; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Indicators &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Kenya &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Eswatini &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Colombia &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; SA-WC &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; SA-KZN &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Population size &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; +++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; + &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; +++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ++ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;color: darkred !important;"&gt; HCW density &lt;/td&gt;
+   &lt;td style="text-align:center;color: darkred !important;"&gt; + &lt;/td&gt;
+   &lt;td style="text-align:center;color: darkred !important;"&gt; ++ &lt;/td&gt;
+   &lt;td style="text-align:center;color: darkred !important;"&gt; +++ &lt;/td&gt;
+   &lt;td style="text-align:center;color: darkred !important;"&gt; ++ &lt;/td&gt;
+   &lt;td style="text-align:center;color: darkred !important;"&gt; ++ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; COVID-19 incidence in general population &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; + &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; +++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; +++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ++ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; COVID-19 mortality rate for the general population &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; + &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; +++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; +++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ++ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;color: darkred !important;"&gt; Share of infections in HCWs compared to general population &lt;/td&gt;
+   &lt;td style="text-align:center;color: darkred !important;"&gt; +++ &lt;/td&gt;
+   &lt;td style="text-align:center;color: darkred !important;"&gt; ++ &lt;/td&gt;
+   &lt;td style="text-align:center;color: darkred !important;"&gt; + &lt;/td&gt;
+   &lt;td style="text-align:center;color: darkred !important;"&gt; +++ &lt;/td&gt;
+   &lt;td style="text-align:center;color: darkred !important;"&gt; +++ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Share of deaths due to COVID-19 in HCWs compared to general population &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ++ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; + &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; + &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ++ &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+---
+
+# Detailed profile of sites
+
+&lt;table class=" lightable-classic" style='font-size: 11.5px; font-family: "Arial Narrow", "Source Sans Pro", sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;font-weight: bold;color: darkred !important;"&gt; Indicators &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;color: darkred !important;"&gt; Kenya &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;color: darkred !important;"&gt; Eswatini &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;color: darkred !important;"&gt; Colombia &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;color: darkred !important;"&gt; SA-WC &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;color: darkred !important;"&gt; SA-KZN &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr grouplength="3"&gt;&lt;td colspan="6" style="border-bottom: 0;"&gt;&lt;strong&gt;Background indicators&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Population size (2019, in millions) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 52.57 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 50.34 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 7.01 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 11.53 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Total number of HCWs (2019) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 176,662 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 7,726 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 838,651 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 35,317 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 68,862 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;color: darkred !important;" indentlevel="1"&gt; Number of HCWs per 1,000 (2019) &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 3.4 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 6.7 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 16.7 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 5.0 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 6.0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr grouplength="5"&gt;&lt;td colspan="6" style="border-bottom: 0;"&gt;&lt;strong&gt;COVID-19 cases (March 1, 2020-Feb 28, 2021)&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Number of COVID-19 cases in the general population &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 105,148 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17,911 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2,250,173 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 297,043 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 341,336 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Number of COVID-19 cases in HCWs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3,400 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 464 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 42,142 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 10,111 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 16,299 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Share of COVID-19 cases that occurred in HCWs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.20% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.53% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.86% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.37% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.66% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Incidence of COVID-19 in the general population (per 1000 population) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 15.6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 44.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 42.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 29.6 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;color: darkred !important;" indentlevel="1"&gt; Incidence of COVID-19 in HCWs (per 1000 population) &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 19.2 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 60.1 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 50.2 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 286.3 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 236.7 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr grouplength="5"&gt;&lt;td colspan="6" style="border-bottom: 0;"&gt;&lt;strong&gt;COVID deaths (March 1, 2020-Feb 28, 2021)&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Number of COVID-19 deaths in the general population &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1,853 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 670 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 60,511 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 11,881 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 10,535 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Number of COVID-19 deaths in HCWs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 33 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 196 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 108 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 386 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Share of deaths that occurred in HCWs (%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.78% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.49% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; .32% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; .91% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.66% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Mortality in the general population (per 10 000 population) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 12.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 9.1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;color: darkred !important;" indentlevel="1"&gt; Mortality in HCWs (per 10 000 population) &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 1.9 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 12.9 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 2.3 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 30.6 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 56.1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr grouplength="2"&gt;&lt;td colspan="6" style="border-bottom: 0;"&gt;&lt;strong&gt;Case fatality rate (March 1, 2020-Feb 28, 2021)&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; HCWs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.98% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.20% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.47% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.08% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.43% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; General population &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.76% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.64% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.69% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.01% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.09% &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+---
+
+# Data sources 
+
+.pull-left[
+
+### .red[Primary] data
+
+  - SARS-CoV-2 infection in HCWs 
+    
+  - Deaths from COVID-19 in HCWs 
+ 
+### .red[Secondary] data  
+
+- World Development Indicators on country demographics, macroeconomic figures 
+
+  - GDP per capita
+  
+  - Hospital admission rates, under-five mortality rate, maternal mortality rate
+  
+  ]
+
+.pull-right[
+
+- JHU database 
+
+  - SARS-CoV-2 infections and deaths in the general population
+
+- Peer-reviewed journal publications or grey literature
+
+  - e.g., treatment costs and direct non-medical cost
+
+### The researchers' .red[assumptions] and .red[extrapolations]
+]
+
+---
+
+# Scenario analysis and sensitivity analysis 
+
+.pull-left[
+
+### Key parameters for scenario analysis 
+
+  - The share of inpatients considered to be close contacts of HCWs;
+   
+  - The extent to which SARS-CoV-2 infection reduced health care workforce productivity;
+   
+  - The elasticity of MMR relative to HCW density; and 
+   
+  - The elasticity of U5MR relative to HCW density
+
+]
+
+.pull-right[
+
+&lt;table class=" lightable-classic" style='font-size: 16px; font-family: "Arial Narrow", "Source Sans Pro", sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;font-weight: bold;color: darkred !important;"&gt; Scenarios &lt;/th&gt;
+   &lt;th style="text-align:center;font-weight: bold;color: darkred !important;"&gt; Share of inpatients who are close contacts of HCWs (pathway 2) &lt;/th&gt;
+   &lt;th style="text-align:center;font-weight: bold;color: darkred !important;"&gt; Reduction in HCW productivity due to SARS-CoV-2 infection(pathway 3) &lt;/th&gt;
+   &lt;th style="text-align:center;font-weight: bold;color: darkred !important;"&gt; Elasticities of maternal and under-five mortality rates (pathway 3) &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Low impact scenario &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0.1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0.05 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Mean+1.96*SD &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Moderate impact scenario (Main analysis) &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0.2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0.10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Mean &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; High impact scenario &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0.3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 0.15 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Mean-1.96*SD &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+### One way sensitivity analysis
+
+### Probabilistic sensitivity analysis 
+
+- 10,000 Monte Carlo simulation to generate 95% confidence interval  
+---
+class: inverse middle center
+
+# Results
+  
+---
+
+# HCWs vs General popualtion: SARS-CoV-2 Infection
+
+&lt;center&gt;
+
+&lt;img src="/libs/pic/Figure-2.jpg" width = 65%&gt;
+
+---
+
+# Infections and deaths by pathway
+
+&lt;table class=" lightable-classic" style='font-family: "Arial Narrow", "Source Sans Pro", sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+&lt;caption&gt;&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;font-weight: bold;"&gt; Pathways &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;"&gt; Kenya &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;"&gt; Eswatini &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;"&gt; Colombia &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;"&gt; SA-WC &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;"&gt; SA-KZN &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr grouplength="2"&gt;&lt;td colspan="6" style="border-bottom: 0;"&gt;&lt;strong&gt;Pathway 1&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;color: darkred !important;" indentlevel="1"&gt; Number of SARS-CoV-2 infections in HCWs &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 3,400 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 464 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 42,142 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 10,111 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 16,299 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;color: darkred !important;" indentlevel="1"&gt; Number of COVID-19 deaths in HCWs &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 33 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 10 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 196 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 108 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 386 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr grouplength="4"&gt;&lt;td colspan="6" style="border-bottom: 0;"&gt;&lt;strong&gt;Pathway 2&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; The odds ratio of SARS-CoV-2 infection due to exposure to HCWs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 7.21 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.63 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.32 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.25 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.71 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Population attribution risk (PAR) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 9.42% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 14.2% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.94% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 13.9% &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.3% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;color: darkred !important;" indentlevel="1"&gt; Secondary infections due to SARS-CoV-2 infection in HCWs &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 9,939 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 2,607 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 43,786 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 41,162 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 69,331 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;color: darkred !important;" indentlevel="1"&gt; Secondary deaths due to SARS-CoV-2 infection in HCWs &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 175 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 95 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 1,177 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 1,648 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 2,141 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr grouplength="2"&gt;&lt;td colspan="6" style="border-bottom: 0;"&gt;&lt;strong&gt;Pathway 3&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;color: darkred !important;" indentlevel="1"&gt; Maternal deaths &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 243 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 29 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 8 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;color: darkred !important;" indentlevel="1"&gt; Deaths of children under 5 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 1,499 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 34 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 235 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 70 &lt;/td&gt;
+   &lt;td style="text-align:right;color: darkred !important;"&gt; 206 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# Economic burden by pathway (Moderte impact scenario)
+
+&lt;table class=" lightable-classic" style='font-size: 14px; font-family: "Arial Narrow", "Source Sans Pro", sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+&lt;caption style="font-size: initial !important;"&gt;&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;font-weight: bold;"&gt; Pathways &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;"&gt; Kenya &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;"&gt; Eswatini &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;"&gt; Colombia &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;"&gt; SA-WC &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;"&gt; SA-KZN &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr grouplength="4"&gt;&lt;td colspan="6" style="border-bottom: 0;"&gt;&lt;strong&gt;Pathway 1&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Medical costs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $2.79 (53.4%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $0.79 (39.5%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $65.64 (50.9%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $19.99 (22.5%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $32.22 (19.7%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Non-medical costs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $0.04 (0.8%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $0.01 (0.5%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $1.44 (1.1%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $0.20 (0.2%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $0.32 (0.2%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Indirect costs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $2.39 (45.8%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $1.20 (60.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $61.82 (48.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $68.63 (77.3%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $130.93 (80.1%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Sub total &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $5.22 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $2.00 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $128.89 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $88.82 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $163.47 (100.0%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr grouplength="4"&gt;&lt;td colspan="6" style="border-bottom: 0;"&gt;&lt;strong&gt;Pathway 2&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Medical costs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $8.17 (54.6%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $4.46 (44.9%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $68.20 (28.1%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $81.38 (34.4%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $137.07 (39.8%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Mon-medical costs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $0.10 (0.7%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $0.06 (0.6%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $1.49 (0.6%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $0.81 (0.3%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $1.36 (0.4%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Indirect costs &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $6.68 (44.7%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $5.43 (54.6%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $173.44 (71.3%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $154.31 (65.2%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $206.36 (59.9%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Sub total &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $14.95 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $9.94 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $243.13 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $236.50 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $344.79 (100.0%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr grouplength="3"&gt;&lt;td colspan="6" style="border-bottom: 0;"&gt;&lt;strong&gt;Pathway 3&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Cost of maternal deaths &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $12.00 (12.9%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $0.55 (12.9%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $5.37 (10.4%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $0.62 (4.9%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $1.19 (3.3%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Cost of deaths in children under 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $81.03 (87.1%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $3.70 (87.1%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $46.47 (89.6%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $11.98 (95.1%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $35.19 (96.7%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;padding-left: 2em;" indentlevel="1"&gt; Sub total &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $93.03 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $4.25 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $51.84 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $12.60 (100.0%) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; $36.38 (100.0%) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: darkred !important;background-color: lightgrey !important;"&gt; Total costs &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkred !important;background-color: lightgrey !important;"&gt; $113.2 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkred !important;background-color: lightgrey !important;"&gt; $16.19 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkred !important;background-color: lightgrey !important;"&gt; $423.86 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkred !important;background-color: lightgrey !important;"&gt; $337.91 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkred !important;background-color: lightgrey !important;"&gt; $544.64 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+# The structure of the cost 
+
+&lt;center&gt;
+
+&lt;img src="/libs/pic/Figure-3.jpg" width = 65%&gt;
+
+---
+
+# Total economic burden and comparision with GDP/capita
+
+
+&lt;table class=" lightable-classic" style='font-size: 19px; font-family: "Arial Narrow", "Source Sans Pro", sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;font-weight: bold;color: darkred !important;"&gt; Sites &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;color: darkred !important;"&gt; Total economic loss (US$ million) &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;color: darkred !important;"&gt; Economic cost as a share of total health expenditure &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;color: darkred !important;"&gt; Cost per SARS-CoV-2 infection (Total cost/ number of SARS-CoV-2 infections among HCWs) &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;color: darkred !important;"&gt; GDP/ capita in 2020 US$ &lt;/th&gt;
+   &lt;th style="text-align:right;font-weight: bold;color: darkred !important;"&gt; Ratio of cost per SAR-CoV-2 infection among HCWs to GDP/capita &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Kenya &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; $113.20 ($62.68 - $190.34) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; 2.03% (1.12% - 3.41%) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; $33,619 ($18,616 - $56,531) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2cm; "&gt; 1870 &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; 17.98 (9.95- 30.23) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Eswatini &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; $16.19 ($13.69 - $19.81) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; 5.01% (4.24% - 6.13%) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; $35,659 ($30,158 - $43,644) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2cm; "&gt; 3941 &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; 9.05 (7.65- 11.07) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Colombia &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; $423.86 ($390.25 - $470.31) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; 1.51% (1.39% - 1.68%) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; $10,105 ($9,304 - $11,212) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2cm; "&gt; 6549 &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; 1.54 (1.42- 1.71) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; SA-WC &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; $337.91 ($302.48 - $377.02) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; 8.38% (7.50% - 9.35%) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; $33,781 ($30,238 - $37,691) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2cm; "&gt; 5931 &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; 5.70 (5.10- 6.35) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; SA-KZN &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; $544.64 ($504.99 - $590.72) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; 8.21% (7.61% - 8.90%) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; $34,226 ($31,735 - $37,122) &lt;/td&gt;
+   &lt;td style="text-align:right;width: 2cm; "&gt; 5931 &lt;/td&gt;
+   &lt;td style="text-align:right;width: 6cm; "&gt; 5.77 (5.35- 6.26) &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+---
+
+# Sensitivity analysis on percentage of impatients exposed to HCWs
+
+&lt;center&gt;
+
+&lt;img src="/libs/pic/sens1.png" width = 70%&gt;
+
+---
+
+# Sensitivity analysis on reduction of productivity among HCWs
+
+&lt;center&gt;
+
+&lt;img src="/libs/pic/sens2.png" width = 70%&gt;
+
+---
+
+# Sensitivity analysis on elasticity of U5MR and MMR
+
+&lt;center&gt;
+
+&lt;img src="/libs/pic/sens3.png" width = 70%&gt;
+
+---
+
+class: inverse middle center 
+
+# Discussion 
+
+---
+
+# Key findings 
+
+- HCWs experience disproportionately .red[high] rates of SARS-CoV-2 infection compared to the general population
+
+- SARS-CoV-2 infection in HCWs results in .red[enormous societal costs]
+
+- The .red[secondary infection] and .red[disruption] of health services constitute large share of the total cost
+        
+---
+
+# Costs go beyond those inccured in HCWs
+
+- The cost of primary SARS-CoV-2 infection and related deaths in HCWs is not insignificant
+
+- The scale of economic losses mostly reflects onward infectious transmission from infected HCWs and disruptions in essential maternal and child health services is even larger
+
+  - The cost of shortage of HCWs in LMICs amounts to .red[$15.86 billion]
+  
+  - It was estimated that .red[24,400 additional maternal deaths] and .red[417,000 additional child deaths] per year globally due to disruption of essential services
+
+
+---
+# Investing in health system resilience
+
+- HCW infections are .red[preventable] 
+
+- .red[Resilient health systems] can adapt public health functions to mount a timely response to an infectious threat while protecting HCWs in order to preserve essential health service delivery
+
+- Efforts to maintain and .red[adequately protect] the health workforce during public health emergencies are .red[integral] to strategies to strengthen health systems’ resilience
+
+- Deployment of the health workforce during a crisis must be accompanied by .red[comprehensive measures to protect HCWs] 
+---
+
+# Conservative estimates
+
+- Under-reporting
+
+- Not capturing the long-term impact on HRH 
+
+- Not including CHW in the analysis 
+
+- Not capturing other pathways (e.g., mental health)
+
+---
+
+# Limitations 
+
+- Did not use disease transmission model to estimate the secondary infections
+
+- Data from South Africa did not include the private sector
+
+- Some data were not available and had to rely on assumptions
+
+- Not able to accurately estimate the impact of COVID-19 on HCWs productivity
+
+---
+
+# Aknowledgements 
+
+### Supported by the **World Bank** and **Resolve to Save Lives** 
+
+.pull-left[
+
+- ### Coauthors from World Bank 
+
+  - Huihui Wang
+  
+  - Kenneth Kabubei
+  
+  - Sifiso Mtshali
+  
+  - Luis Salinas
+  
+  - Jame Chuma
+  
+  - Jeremy Veillard
+  
+  - Thulani Matsebula
+  
+  - Michey Chopra
+
+]
+
+.pull-right[
+
+- ### Coauthors from Resolve to Save Lives 
+
+  - Amanda McClelland 
+  
+  - Marine Buissonniere
+  
+  - Christopher T. Lee
+  
+- ### Coauthors from other organizations
+]
+
+---
+# Initiative of Health Economics, Financing and Outcomes (HEFO)
+
+.left-column[
+
+- 5 Faculty
+
+- 2 Research Assistants
+
+- hefo.gerogetown.edu
+
+Contact info 
+
+- hefo@georgetown.edu
+  
+- <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:10pt;width:10pt;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkred;overflow:visible;fill-opacity:100%;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>[@hefo_georgetown](https://www.twitter.com/hefo_georgotown) 
+
+]
+
+.right-column[
+
+&lt;center&gt; 
+&lt;img src="/libs/pic/hefo.png" width = "600" &gt;
+
+]
+
+---
+class: inverse, center, middle
+
+# Comments and questions?
+
+Email: [wz192@georgetown.edu](mailto:wz192@georgetown.edu)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
